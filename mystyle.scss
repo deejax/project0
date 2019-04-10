@@ -1,0 +1,113 @@
+$color: black ;
+
+@media (min-width: 500px) {
+
+              h1::before {
+                  content: "Project-Zero : My Four Interests";
+              }
+          }
+
+          @media (max-width: 499px) {
+
+              h1::before {
+                  content: "PRJ 0: 4 Interests";
+              }
+          }
+          h1 {
+              color: royalblue;
+              text-align: center;
+              background-color:#E1FA79;
+          }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+%textdec {
+  text-decoration:none;
+}
+.sc   {
+  @extend %textdec;
+    background-color: lightsalmon;
+      }
+.ds  {
+    @extend %textdec;
+    background-color: lightpink;
+      }
+.py  {
+    @extend %textdec;
+    background-color: lightgreen;
+      }
+.wd  {
+    @extend %textdec;
+    background-color: lightblue;
+      }
+
+      .sc:hover   {
+          @extend %textdec;
+          background-color: salmon;
+          color:$color;
+            }
+      .ds:hover  {
+          @extend %textdec;
+          background-color: lightcoral;
+          color:$color;
+            }
+      .py:hover  {
+          @extend %textdec;
+          background-color: yellowgreen;
+          color:$color;
+            }
+      .wd:hover  {
+          @extend %textdec;
+          background-color: steelblue;
+          color:$color;
+            }
+
+.container > a {
+    @extend %textdec;
+  font-size: 20px;
+  margin: 20px;
+  padding: 20px;
+  width: auto;
+  text-align: center;
+   }
+
+
+   #home {
+ 	  background-color: lightgrey;
+ 	  font-size: 20px;
+ 	  text-align: center;
+ 	}
+
+  #home:hover {
+   @extend %textdec;
+   background-color: black;
+ }
+
+#body  {
+  background-color: honeydew;
+}
+
+img {
+  float: right;
+  padding-right: 5%;
+  height: 150px;
+}
+table {
+                border: 2px solid black;
+                border-collapse: collapse;
+
+      }
+
+            th , td {
+                border: 1px solid black;
+                padding: 5px;
+                text-align: center;
+                font-size: 10px;
+            }
+
+            th {
+                background-color: lightblue;
+            }
