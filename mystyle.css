@@ -1,0 +1,106 @@
+@media (min-width: 500px) {
+  h1::before {
+    content: "Project-Zero : My Four Interests";
+  }
+}
+@media (max-width: 499px) {
+  h1::before {
+    content: "PRJ 0: 4 Interests";
+  }
+}
+h1 {
+  color: royalblue;
+  text-align: center;
+  background-color: #E1FA79;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#home:hover, .container > a, .wd:hover, .py:hover, .ds:hover, .sc:hover, .wd, .py, .ds, .sc {
+  text-decoration: none;
+}
+
+.sc {
+  background-color: lightsalmon;
+}
+
+.ds {
+  background-color: lightpink;
+}
+
+.py {
+  background-color: lightgreen;
+}
+
+.wd {
+  background-color: lightblue;
+}
+
+.sc:hover {
+  background-color: salmon;
+  color: black;
+}
+
+.ds:hover {
+  background-color: lightcoral;
+  color: black;
+}
+
+.py:hover {
+  background-color: yellowgreen;
+  color: black;
+}
+
+.wd:hover {
+  background-color: steelblue;
+  color: black;
+}
+
+.container > a {
+  font-size: 20px;
+  margin: 20px;
+  padding: 20px;
+  width: auto;
+  text-align: center;
+}
+
+#home {
+  background-color: lightgrey;
+  font-size: 20px;
+  text-align: center;
+}
+
+#home:hover {
+  background-color: black;
+}
+
+#body {
+  background-color: honeydew;
+}
+
+img {
+  float: right;
+  padding-right: 5%;
+  height: 150px;
+}
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  font-size: 10px;
+}
+
+th {
+  background-color: lightblue;
+}
+
+/*# sourceMappingURL=mystyle.css.map */
