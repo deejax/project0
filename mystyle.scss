@@ -1,6 +1,24 @@
+// variable
 $color: black ;
 
+// nested
+div {
+
+    font: courier;
+
+    a {
+        color: black;
+    }
+
+    table {
+        color: darkblue;
+    }
+}
+
 @media (min-width: 500px) {
+            #body {
+              height: 400px;
+            }
 
               h1::before {
                   content: "Project-Zero : My Four Interests";
@@ -8,6 +26,9 @@ $color: black ;
           }
 
           @media (max-width: 499px) {
+            #body {
+              height: 600px;
+            }
 
               h1::before {
                   content: "PRJ 0: 4 Interests";
@@ -18,7 +39,7 @@ $color: black ;
               text-align: center;
               background-color:#E1FA79;
           }
-
+//class selector
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -26,8 +47,11 @@ $color: black ;
 
 %textdec {
   text-decoration:none;
+    color:$color;
+      text-align: center;
 }
 .sc   {
+  // inheritence 
   @extend %textdec;
     background-color: lightsalmon;
       }
@@ -41,8 +65,9 @@ $color: black ;
       }
 .wd  {
     @extend %textdec;
-    background-color: lightblue;
+    background-color: skyblue;
       }
+//hover selctor
 
       .sc:hover   {
           @extend %textdec;
@@ -64,7 +89,7 @@ $color: black ;
           background-color: steelblue;
           color:$color;
             }
-
+/*
 .container > a {
     @extend %textdec;
   font-size: 20px;
@@ -73,8 +98,20 @@ $color: black ;
   width: auto;
   text-align: center;
    }
+*/
+//child selector
+.row > div {
+  @extend %textdec;
+font-size: 20px;
+//margin: 0px;
+padding: 10px;
+//border: 1px solid black;
+//width: auto;
+//text-align: center;
+       }
 
 
+// id selector
    #home {
  	  background-color: lightgrey;
  	  font-size: 20px;
@@ -83,10 +120,11 @@ $color: black ;
 
   #home:hover {
    @extend %textdec;
-   background-color: black;
+   background-color: white;
  }
 
 #body  {
+//  height: 400px;
   background-color: honeydew;
 }
 
@@ -101,6 +139,7 @@ table {
 
       }
 
+// element, element selector
             th , td {
                 border: 1px solid black;
                 padding: 5px;
@@ -111,3 +150,20 @@ table {
             th {
                 background-color: lightblue;
             }
+
+            .grid {
+
+                            display: grid;
+                            padding: 5px;
+                            grid-column-gap: 10px;
+                            grid-row-gap: 10px;
+                            grid-template-columns: auto  auto;
+                        }
+
+                        .grid-item {
+                            background-color: LAVENDER;
+                            font-size: 20px;
+                            padding: 10px;
+                            text-align: center;
+                        }
+footer {text-align:center ; font-weight: bold; }

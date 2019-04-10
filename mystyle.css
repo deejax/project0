@@ -1,9 +1,27 @@
+div {
+  font: courier;
+}
+div a {
+  color: black;
+}
+div table {
+  color: darkblue;
+}
+
 @media (min-width: 500px) {
+  #body {
+    height: 400px;
+  }
+
   h1::before {
     content: "Project-Zero : My Four Interests";
   }
 }
 @media (max-width: 499px) {
+  #body {
+    height: 600px;
+  }
+
   h1::before {
     content: "PRJ 0: 4 Interests";
   }
@@ -19,8 +37,10 @@ h1 {
   flex-wrap: wrap;
 }
 
-#home:hover, .container > a, .wd:hover, .py:hover, .ds:hover, .sc:hover, .wd, .py, .ds, .sc {
+#home:hover, .row > div, .wd:hover, .py:hover, .ds:hover, .sc:hover, .wd, .py, .ds, .sc {
   text-decoration: none;
+  color: black;
+  text-align: center;
 }
 
 .sc {
@@ -36,7 +56,7 @@ h1 {
 }
 
 .wd {
-  background-color: lightblue;
+  background-color: skyblue;
 }
 
 .sc:hover {
@@ -59,12 +79,19 @@ h1 {
   color: black;
 }
 
+/*
 .container > a {
+    @extend %textdec;
   font-size: 20px;
   margin: 20px;
   padding: 20px;
   width: auto;
   text-align: center;
+   }
+*/
+.row > div {
+  font-size: 20px;
+  padding: 10px;
 }
 
 #home {
@@ -74,7 +101,7 @@ h1 {
 }
 
 #home:hover {
-  background-color: black;
+  background-color: white;
 }
 
 #body {
@@ -101,6 +128,26 @@ th, td {
 
 th {
   background-color: lightblue;
+}
+
+.grid {
+  display: grid;
+  padding: 5px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: auto auto;
+}
+
+.grid-item {
+  background-color: LAVENDER;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=mystyle.css.map */
