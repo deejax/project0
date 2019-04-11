@@ -8,7 +8,7 @@ The website has 5 html pages, 1 index and 4 others viz, ds, py,sc & web-dev.
 
 There is also the sass style sheet named mystyle.scss.
 
-Please note: Github didnt automatically covert the .scss file to .css to have to pre-complie and upload.
+Please note: Github didnt automatically covert the .scss file to .css so I had to pre-complie and upload.
 
 Also the web pages doesnt exactly reflects all the styles when hosted in github. but locally everything looks fine.
 
